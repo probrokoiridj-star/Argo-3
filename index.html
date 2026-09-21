@@ -1,144 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="bn">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>অর্ঘ্য সংঘ — Arghya Sangha</title>
-<meta name="theme-color" content="#0a0a12">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>অর্ঘ্য সংঘ — Durga Puja</title>
 <style>
-:root{--bg:#090a12;--text:#fff7e5;--muted:#cfc3ae;--gold:#f5c95c;--gold2:#ffe7a0;--glass:rgba(255,255,255,.07);--line:rgba(245,201,92,.2)}
-*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}
-body{font-family:"Noto Sans Bengali",sans-serif;color:var(--text);background:radial-gradient(circle at 20% 10%,#39230f 0,transparent 32%),radial-gradient(circle at 90% 90%,#151b38 0,transparent 35%),var(--bg)}
-body.day{background:radial-gradient(circle at 50% 0,#67401a 0,transparent 35%),linear-gradient(#24170e,#100c0a)}
-body.night{background:radial-gradient(circle at 80% 5%,#28304e 0,transparent 25%),linear-gradient(#090d1d,#060810)}
-.nav{position:fixed;z-index:10;top:10px;left:10px;right:10px;height:58px;display:flex;align-items:center;padding:0 9px;border:1px solid var(--line);border-radius:20px;background:rgba(8,8,12,.72);backdrop-filter:blur(18px)}
-.brand{font-weight:800;color:var(--gold2);white-space:nowrap;font-size:15px}.navlinks{margin-left:auto;display:flex;gap:2px}.nav button{font:inherit;border:0;background:transparent;color:var(--muted);padding:9px 7px;border-radius:12px;font-size:11px}.nav button.active,.nav button:hover{color:var(--gold2);background:rgba(245,201,92,.1)}.theme{font-size:15px!important}
-#app{height:100dvh;width:100vw;display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}#app::-webkit-scrollbar{display:none}
-.page{min-width:100vw;width:100vw;height:100dvh;overflow-y:auto;padding:84px 18px 30px;scroll-snap-align:start}.inner{max-width:620px;margin:auto}
-.hero{min-height:calc(100dvh - 114px);display:flex;flex-direction:column;justify-content:center;text-align:center}
-.kicker{font-size:11px;letter-spacing:2px;color:var(--gold);margin-bottom:12px}.hero h1{font-family:"Playfair Display","Noto Sans Bengali",serif;font-size:clamp(46px,15vw,78px);line-height:1;margin:0;color:var(--gold2);text-shadow:0 0 30px rgba(245,201,92,.16)}.sub{color:var(--muted);margin:10px 0 20px}.card{background:var(--glass);border:1px solid var(--line);border-radius:24px;padding:20px;margin:14px 0;backdrop-filter:blur(16px);box-shadow:0 20px 55px rgba(0,0,0,.3)}
-.title{font-size:22px;font-weight:800;color:var(--gold2);margin:0 0 5px}.desc{font-size:13px;color:var(--muted);line-height:1.8;margin:0 0 15px}
-.sky{font-size:42px;margin-bottom:5px}.timer{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.unit{padding:12px 4px;border-radius:16px;background:rgba(0,0,0,.18);border:1px solid rgba(245,201,92,.12)}.num{display:block;font-family:"Playfair Display",serif;color:#ffd45b;font-size:28px;font-weight:700;text-shadow:0 0 18px rgba(255,212,91,.22)}.lab{font-size:10px;color:var(--muted)}
-.date-main{text-align:center;color:var(--gold2);font-size:13px;margin-top:13px}
-.audio{display:grid;grid-template-columns:1fr 1fr;gap:9px}.audio button{border:1px solid rgba(245,201,92,.3);background:rgba(245,201,92,.09);color:var(--gold2);border-radius:16px;padding:13px 8px;font:inherit;font-weight:700}.audio button.playing{background:rgba(245,201,92,.23)}
-.schedule{display:grid;gap:8px}.row{display:flex;justify-content:space-between;gap:10px;padding:13px 14px;border-radius:15px;background:rgba(0,0,0,.15);border:1px solid rgba(245,201,92,.1)}.row b{color:var(--gold2);font-size:13px}.row span{color:var(--muted);font-size:12px;text-align:right}
-.gallery{display:grid;grid-template-columns:1fr 1fr;gap:9px}.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:17px;border:1px solid var(--line)}
-.location{font-size:22px;line-height:1.55;color:var(--gold2)}.map{display:block;text-align:center;text-decoration:none;background:var(--gold);color:#17100a;padding:13px;border-radius:16px;font-weight:800;margin-top:14px}
-.footer{text-align:center;color:#9d927f;font-size:11px;padding:20px 0}.footer b{color:var(--gold2)}
-.stars{position:fixed;inset:0;pointer-events:none;opacity:.28;background-image:radial-gradient(circle,white 0 1px,transparent 1.5px);background-size:78px 78px}
-@media(max-width:380px){.brand{font-size:13px}.nav button{padding:8px 5px;font-size:10px}.num{font-size:23px}}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{width:100%;height:100%;overflow:hidden;font-family:"Noto Serif Bengali","Noto Sans Bengali",serif}
+body{background:linear-gradient(135deg,#030b18,#0a1830 60%,#111f3d);color:#fff;transition:.5s}
+body.day{background:linear-gradient(135deg,#fff4d6,#f7d58b);color:#271708}
+.stars{position:fixed;inset:0;pointer-events:none;opacity:.35;background-image:radial-gradient(circle,#fff 1px,transparent 1px),radial-gradient(circle,#fff 1px,transparent 1px);background-size:90px 90px,130px 130px;z-index:0}
+.nav{position:fixed;top:12px;left:50%;transform:translateX(-50%);width:94%;z-index:20;padding:9px;border-radius:22px;display:flex;gap:7px;overflow-x:auto;background:#2228;backdrop-filter:blur(15px);border:1px solid #ffd77840}
+.nav button{flex:0 0 auto;border:0;color:#ffd66b;background:#fff1;padding:9px 13px;border-radius:15px;font-size:13px}
+.pages{width:100vw;height:100vh;display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth}
+.page{min-width:100vw;width:100vw;height:100vh;overflow-y:auto;scroll-snap-align:start;padding:85px 18px 35px}
+.page-content{width:100%;max-width:650px;margin:auto}
+.hero{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.lamp{font-size:38px;margin-bottom:10px;filter:drop-shadow(0 0 15px #ffca55)}
+.hero h1{font-size:42px;color:#d99a21;text-shadow:0 0 18px #ffbe3c59}
+body:not(.day) .hero h1{color:#ffd76b}
+.subtitle{margin-top:7px;opacity:.8;font-size:15px}
+.sky-icon{font-size:55px;margin:30px 0 12px;animation:float 3s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-7px)}}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;width:100%;max-width:430px}
+.time-box{padding:13px 4px;border-radius:18px;background:#fff1;border:1px solid #ffcd5a59;backdrop-filter:blur(10px)}
+.time-box strong{display:block;font-size:25px;color:#ffd04d}.time-box span{font-size:11px;opacity:.75}
+.card{padding:20px;margin:12px 0;border-radius:24px;background:#fff1;border:1px solid #ffd26438;backdrop-filter:blur(13px);box-shadow:0 10px 40px #0002}
+.card h2{color:#e8ad35;margin-bottom:12px}
+body:not(.day) .card h2{color:#ffd66b}
+.date-item{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid #fff2}.date-item:last-child{border:0}.date-item b{color:#e8ad35}
+.event{padding:15px 0;border-bottom:1px solid #fff2}.event:last-child{border:0}.event-title{font-size:19px;font-weight:bold;color:#ffd35c}.event-desc{margin-top:3px;opacity:.78;font-size:14px}
+.highlight{margin-top:16px;padding:15px;border-radius:18px;text-align:center;background:#ffbe321f;border:1px solid #ffcd5059;color:#ffd66b;font-weight:bold}
+.audio-area{display:flex;flex-direction:column;gap:10px;margin-top:15px}
+.audio-btn{width:100%;padding:14px;border:1px solid #ffcd5a59;border-radius:18px;background:#fff1;color:#ffd45c;font-size:15px;font-family:inherit}
+.audio-btn.active{background:#ffbe3233}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:18px;cursor:zoom-in}
+.lightbox{position:fixed;inset:0;z-index:100;background:#000f;display:none;align-items:center;justify-content:center;padding:20px}.lightbox.show{display:flex}.lightbox img{max-width:100%;max-height:90%;object-fit:contain;border-radius:10px;touch-action:none;user-select:none}
+.close-lightbox{position:absolute;top:18px;right:18px;width:42px;height:42px;border:0;border-radius:50%;background:#fff2;color:#fff;font-size:25px}
+.map-btn{display:block;text-decoration:none;text-align:center;margin-top:15px;padding:14px;border-radius:18px;background:#d99a21;color:#160d03;font-weight:bold}
+.footer{text-align:center;opacity:.65;padding:25px 0 5px;font-size:12px}.footer b{color:#e5ad35}
+.theme-btn{position:fixed;right:12px;bottom:14px;z-index:30;width:43px;height:43px;border-radius:50%;border:1px solid #ffd25a59;background:#14141466;color:#ffd45c;font-size:19px}
+@media(max-width:380px){.hero h1{font-size:35px}.time-box strong{font-size:21px}}
 </style>
 </head>
-<body class="night">
+<body>
 <div class="stars"></div>
 <nav class="nav">
-  <div class="brand">🪔 অর্ঘ্য সংঘ</div>
-  <div class="navlinks">
-    <button class="active" onclick="go(0)">হোম</button>
-    <button onclick="go(1)">তারিখ</button>
-    <button onclick="go(2)">গ্যালারি</button>
-    <button onclick="go(3)">লোকেশন</button>
-  </div>
-  <button class="theme" onclick="toggleTheme()" id="theme">🌙</button>
+<button onclick="goTo(0)">হোম</button><button onclick="goTo(1)">তারিখ</button><button onclick="goTo(2)">অনুষ্ঠান</button><button onclick="goTo(3)">গ্যালারি</button><button onclick="goTo(4)">লোকেশন</button>
 </nav>
+<div class="pages">
 
-<main id="app">
-<section class="page"><div class="inner hero">
-  <div class="kicker">SHARADIYA DURGA PUJA • 2026</div>
-  <h1>অর্ঘ্য সংঘ</h1><div class="sub">Arghya Sangha</div>
-  <div class="card" style="width:100%">
-    <div class="sky" id="sky">🌙</div>
-    <h2 class="title">পূজার কাউন্টডাউন</h2>
-    <p class="desc">মহা ষষ্ঠী — ১৬ অক্টোবর ২০২৬</p>
-    <!-- NO IMAGE is used behind or inside the timer. -->
-    <div class="timer">
-      <div class="unit"><span class="num" id="d">00</span><span class="lab">দিন</span></div>
-      <div class="unit"><span class="num" id="h">00</span><span class="lab">ঘণ্টা</span></div>
-      <div class="unit"><span class="num" id="m">00</span><span class="lab">মিনিট</span></div>
-      <div class="unit"><span class="num" id="s">00</span><span class="lab">সেকেন্ড</span></div>
-    </div>
-    <div class="date-main">📅 ১৬ অক্টোবর ২০২৬ — ২১ অক্টোবর ২০২৬</div>
-  </div>
-  <div class="card" style="width:100%">
-    <h2 class="title">🎵 পূজার অডিও</h2>
-    <p class="desc">তোমার Dhak MP3: <b>dhak.mp3</b><br>মহালয়ার জন্য পরে: <b>mahalaya.mp3</b></p>
-    <div class="audio">
-      <button id="db" onclick="playAudio('dhak','db')">🔊 ধাক ON</button>
-      <button id="mb" onclick="playAudio('mahalaya','mb')">🌺 মহালয়া</button>
-    </div>
-    <audio id="dhak" src="dhak.mp3" loop preload="auto"></audio>
-    <audio id="mahalaya" src="mahalaya.mp3" loop preload="auto"></audio>
-  </div>
-</div></section>
+<section class="page"><div class="page-content hero">
+<div class="lamp">🪔</div><h1>অর্ঘ্য সংঘ</h1><div class="subtitle">শারদীয়া দুর্গোৎসব • Muktagachha</div>
+<div class="sky-icon" id="skyIcon">☀️</div>
+<div class="countdown">
+<div class="time-box"><strong id="days">00</strong><span>দিন</span></div>
+<div class="time-box"><strong id="hours">00</strong><span>ঘণ্টা</span></div>
+<div class="time-box"><strong id="minutes">00</strong><span>মিনিট</span></div>
+<div class="time-box"><strong id="seconds">00</strong><span>সেকেন্ড</span></div>
+</div>
+<div class="subtitle">মহাষষ্ঠী • ১৬ অক্টোবর ২০২৬</div>
+<div class="audio-area">
+<button class="audio-btn" id="dhakBtn" onclick="toggleDhak()">🔇 ঢাক বন্ধ</button>
+<button class="audio-btn" id="mahalayaBtn" onclick="toggleMahalaya()" style="display:none">🕉️ মহালয়া</button>
+</div></div></section>
 
-<section class="page"><div class="inner">
-  <div class="card"><div class="kicker">PUJA DATES</div><h2 class="title">🗓️ পূজার তারিখ</h2>
-    <p class="desc">২০২৬ সালের তারিখ — Dhaka/Bangladesh reference.</p>
-    <div class="schedule">
-      <div class="row"><b>🌺 মহালয়া</b><span>১০ অক্টোবর, শনিবার</span></div>
-      <div class="row"><b>🌼 মহা ষষ্ঠী</b><span>১৬ অক্টোবর, শুক্রবার</span></div>
-      <div class="row"><b>🌿 মহা সপ্তমী</b><span>১৮ অক্টোবর, রবিবার</span></div>
-      <div class="row"><b>🌸 মহা অষ্টমী</b><span>১৯ অক্টোবর, সোমবার</span></div>
-      <div class="row"><b>🌼 মহা নবমী</b><span>২০ অক্টোবর, মঙ্গলবার</span></div>
-      <div class="row"><b>🪔 বিজয়া দশমী</b><span>২১ অক্টোবর, বুধবার</span></div>
-    </div>
-  </div>
-  <div class="card"><h2 class="title">🌺 শুভ মহালয়া</h2><p class="desc">মহালয়ার দিনে দেবীপক্ষের শুভ সূচনা। <b>mahalaya.mp3</b> পরে একই folder-এ যোগ করলেই বাটনটি ব্যবহার করা যাবে।</p></div>
-</div></section>
+<section class="page"><div class="page-content"><div class="card"><h2>📅 পূজার তারিখ</h2>
+<div class="date-item"><span>মহালয়া</span><b>১০ অক্টোবর</b></div><div class="date-item"><span>মহাষষ্ঠী</span><b>১৬ অক্টোবর</b></div><div class="date-item"><span>মহাসপ্তমী</span><b>১৮ অক্টোবর</b></div><div class="date-item"><span>মহাষ্টমী</span><b>১৯ অক্টোবর</b></div><div class="date-item"><span>মহানবমী</span><b>২০ অক্টোবর</b></div><div class="date-item"><span>বিজয়া দশমী</span><b>২১ অক্টোবর</b></div>
+</div></div></section>
 
-<section class="page"><div class="inner">
-  <div class="card"><div class="kicker">MEMORIES</div><h2 class="title">📸 গ্যালারি</h2><p class="desc">অর্ঘ্য সংঘের ছবি</p>
-    <div class="gallery">
-      <img src="4394.jpg" alt="অর্ঘ্য সংঘ"><img src="4393.jpg" alt="অর্ঘ্য সংঘ">
-      <img src="4392.jpg" alt="অর্ঘ্য সংঘ"><img src="4391.jpg" alt="অর্ঘ্য সংঘ">
-      <img src="4388.jpg" alt="অর্ঘ্য সংঘ"><img src="4395.jpg" alt="অর্ঘ্য সংঘ">
-      <img src="4389.jpg" alt="অর্ঘ্য সংঘ">
-    </div>
-  </div>
-</div></section>
+<section class="page"><div class="page-content"><div class="card"><h2>✨ অনুষ্ঠান</h2>
+<div class="event"><div class="event-title">মহালয়া</div><div class="event-desc">দেবীপক্ষের শুভ সূচনা</div></div>
+<div class="event"><div class="event-title">ষষ্ঠী</div><div class="event-desc">পূজা ও বোধন</div></div>
+<div class="event"><div class="event-title">সপ্তমী</div><div class="event-desc">সন্ধ্যা আরতি</div></div>
+<div class="event"><div class="event-title">অষ্টমী</div><div class="event-desc">পুষ্পাঞ্জলি ও সন্ধিপূজা</div></div>
+<div class="event"><div class="event-title">নবমী</div><div class="event-desc">ধুনুচি নৃত্য</div></div>
+<div class="event"><div class="event-title">দশমী</div><div class="event-desc">বিসর্জন</div></div>
+<div class="highlight">🪆 তাছাড়াও রয়েছে পুতুল নাচ</div>
+</div></div></section>
 
-<section class="page"><div class="inner">
-  <div class="card"><div class="kicker">LOCATION</div><h2 class="title">📍 পূজা-মণ্ডপ</h2>
-    <div class="location">Dorgarpar<br>Muktagachha, Mymensingh<br>Bangladesh</div>
-    <p class="desc">অর্ঘ্য সংঘ — দুর্গা পূজা মণ্ডপ</p>
-    <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Dorgarpar%2C%20Muktagachha%2C%20Mymensingh%2CBangladesh">📍 Google Maps-এ দেখুন</a>
-  </div>
-  <div class="card"><h2 class="title">🪔 অর্ঘ্য সংঘ</h2><p class="desc">এই ওয়েবসাইটটি অর্ঘ্য সংঘের পূজা-মণ্ডপ সম্পর্কিত সকলকে সাহায্য করার উদ্দেশ্যে তৈরি করা হয়েছে। পূজা-মণ্ডপের সময়সূচি, বিভিন্ন অনুষ্ঠান, পূজার গুরুত্বপূর্ণ তথ্য, ছবি, আয়োজন এবং প্রয়োজনীয় অন্যান্য তথ্য এই ওয়েবসাইটের মধ্যে পাওয়া যাবে।</p></div>
-  <div class="footer">Made by <b>Mugdho Koiri</b><br>IG: <b>@mugdho_koiri</b></div>
+<section class="page"><div class="page-content"><div class="card"><h2>📸 গ্যালারি</h2><div class="gallery">
+<img src="4394.jpg" onclick="openImage(this.src)"><img src="4393.jpg" onclick="openImage(this.src)"><img src="4392.jpg" onclick="openImage(this.src)"><img src="4391.jpg" onclick="openImage(this.src)"><img src="4388.jpg" onclick="openImage(this.src)"><img src="4395.jpg" onclick="openImage(this.src)"><img src="4389.jpg" onclick="openImage(this.src)">
+</div></div></div></section>
+
+<section class="page"><div class="page-content">
+<div class="card"><h2>📍 লোকেশন</h2><p>Dorgarpar</p><p>Muktagachha, Mymensingh</p><p>Bangladesh</p>
+<a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Dorgarpar%2C+Muktagachha%2C+Mymensingh%2C+Bangladesh" target="_blank">🗺️ Google Maps</a></div>
+<div class="card"><h2>🪔 আমাদের সম্পর্কে</h2><p style="line-height:1.8">এই ওয়েবসাইটটি অর্ঘ্য সংঘের পূজা-মণ্ডপ সম্পর্কিত সকলকে সাহায্য করার উদ্দেশ্যে তৈরি করা হয়েছে। পূজা-মণ্ডপের সময়সূচি, বিভিন্ন অনুষ্ঠান, পূজার গুরুত্বপূর্ণ তথ্য, ছবি, আয়োজন এবং প্রয়োজনীয় অন্যান্য তথ্য এই ওয়েবসাইটের মধ্যে পাওয়া যাবে।</p></div>
+<div class="footer">Made by <b>Mugdho Koiri</b><br>IG: @mugdho_koiri</div>
 </div></section>
-</main>
+</div>
+
+<div class="lightbox" id="lightbox" onclick="closeImage(event)"><button class="close-lightbox" onclick="closeLightbox()">×</button><img id="zoomImage" src="" alt="Gallery image"></div>
+<button class="theme-btn" onclick="toggleTheme()">☀️</button>
+<audio id="dhakAudio" src="dhak.mp3" loop preload="auto"></audio>
+<audio id="mahalayaAudio" src="mahalaya.mp3" preload="auto"></audio>
 
 <script>
-const app=document.getElementById('app');
-function go(i){app.scrollTo({left:i*innerWidth,behavior:'smooth'})}
-function setTheme(){
-  const day=new Date().getHours()>=6&&new Date().getHours()<18;
-  document.body.classList.toggle('day',day);document.body.classList.toggle('night',!day);
-  document.getElementById('sky').textContent=day?'☀️':'🌙';document.getElementById('theme').textContent=day?'☀️':'🌙';
+function goTo(i){document.querySelector(".pages").scrollTo({left:innerWidth*i,behavior:"smooth"})}
+
+let manualTheme=false,nightMode=false;
+function setAutoTheme(){
+if(manualTheme)return;
+let h=new Date().getHours();nightMode=h>=18||h<6;
+document.body.classList.toggle("night",nightMode);document.body.classList.toggle("day",!nightMode);
+skyIcon.textContent=nightMode?"🌙":"☀️";
 }
-function toggleTheme(){
-  const day=document.body.classList.contains('day');
-  document.body.classList.toggle('day',!day);document.body.classList.toggle('night',day);
-  document.getElementById('sky').textContent=!day?'☀️':'🌙';document.getElementById('theme').textContent=!day?'☀️':'🌙';
+function toggleTheme(){manualTheme=true;nightMode=!nightMode;document.body.classList.toggle("night",nightMode);document.body.classList.toggle("day",!nightMode);skyIcon.textContent=nightMode?"🌙":"☀️"}
+setAutoTheme();setInterval(setAutoTheme,60000);
+
+const pujaDate=new Date("2026-10-16T00:00:00+06:00").getTime();
+function updateCountdown(){
+let d=pujaDate-Date.now();if(d<=0)d=0;
+days.textContent=String(Math.floor(d/86400000)).padStart(2,"0");
+hours.textContent=String(Math.floor(d/3600000)%24).padStart(2,"0");
+minutes.textContent=String(Math.floor(d/60000)%60).padStart(2,"0");
+seconds.textContent=String(Math.floor(d/1000)%60).padStart(2,"0");
 }
-const target=new Date('2026-10-16T00:00:00+06:00');
-function countdown(){
-  let x=Math.max(0,target-new Date());
-  document.getElementById('d').textContent=String(Math.floor(x/86400000)).padStart(2,'0');
-  document.getElementById('h').textContent=String(Math.floor(x%86400000/3600000)).padStart(2,'0');
-  document.getElementById('m').textContent=String(Math.floor(x%3600000/60000)).padStart(2,'0');
-  document.getElementById('s').textContent=String(Math.floor(x%60000/1000)).padStart(2,'0');
+updateCountdown();setInterval(updateCountdown,1000);
+
+/* DHAK: real ON/OFF */
+const dhakAudio=document.getElementById("dhakAudio"),dhakBtn=document.getElementById("dhakBtn");
+let dhakPlaying=false;
+async function toggleDhak(){
+if(dhakPlaying){
+dhakAudio.pause();dhakAudio.currentTime=0;dhakPlaying=false;
+dhakBtn.textContent="🔇 ঢাক বন্ধ";dhakBtn.classList.remove("active");return;
 }
-async function playAudio(id,bid){
-  const a=document.getElementById(id),b=document.getElementById(bid);
-  const other=id==='dhak'?document.getElementById('mahalaya'):document.getElementById('dhak');
-  other.pause();other.currentTime=0;
-  if(a.paused){try{await a.play();b.classList.add('playing')}catch(e){alert('এই MP3 ফাইলটি পাওয়া যায়নি। নিশ্চিত করুন ফাইলের নাম ঠিক আছে।')}}else{a.pause();b.classList.remove('playing')}
+try{await dhakAudio.play();dhakPlaying=true;dhakBtn.textContent="🔊 ঢাক চালু";dhakBtn.classList.add("active")}
+catch(e){dhakPlaying=false}
 }
-setTheme();countdown();setInterval(countdown,1000);setInterval(setTheme,60000);
+dhakAudio.addEventListener("pause",()=>{dhakPlaying=false;dhakBtn.textContent="🔇 ঢাক বন্ধ";dhakBtn.classList.remove("active")});
+
+/* MAHALAYA ONLY ON 10 OCT 2026 */
+const mahalayaAudio=document.getElementById("mahalayaAudio"),mahalayaBtn=document.getElementById("mahalayaBtn");
+let mahalayaPlaying=false;
+function isMahalayaDay(){let d=new Date();return d.getFullYear()===2026&&d.getMonth()===9&&d.getDate()===10}
+function updateMahalayaButton(){
+mahalayaBtn.style.display=isMahalayaDay()?"block":"none";
+if(!isMahalayaDay()&&mahalayaPlaying){mahalayaAudio.pause();mahalayaAudio.currentTime=0;mahalayaPlaying=false}
+}
+async function toggleMahalaya(){
+if(mahalayaPlaying){mahalayaAudio.pause();mahalayaAudio.currentTime=0;mahalayaPlaying=false;mahalayaBtn.textContent="🕉️ মহালয়া";mahalayaBtn.classList.remove("active");return}
+dhakAudio.pause();dhakAudio.currentTime=0;dhakPlaying=false;dhakBtn.textContent="🔇 ঢাক বন্ধ";dhakBtn.classList.remove("active");
+try{await mahalayaAudio.play();mahalayaPlaying=true;mahalayaBtn.textContent="⏹️ মহালয়া বন্ধ";mahalayaBtn.classList.add("active")}catch(e){}
+}
+updateMahalayaButton();setInterval(updateMahalayaButton,60000);
+
+/* IMAGE ZOOM */
+const lightbox=document.getElementById("lightbox"),zoomImage=document.getElementById("zoomImage");
+let scale=1,startDistance=0,startScale=1;
+function openImage(src){lightbox.classList.add("show");zoomImage.src=src;scale=1;zoomImage.style.transform="scale(1)"}
+function closeLightbox(){lightbox.classList.remove("show");zoomImage.src="";scale=1}
+function closeImage(e){if(e.target===lightbox)closeLightbox()}
+zoomImage.addEventListener("touchstart",e=>{if(e.touches.length===2){startDistance=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);startScale=scale}});
+zoomImage.addEventListener("touchmove",e=>{if(e.touches.length===2){e.preventDefault();let dist=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);scale=Math.min(4,Math.max(1,startScale*dist/startDistance));zoomImage.style.transform=`scale(${scale})`}},{passive:false});
+zoomImage.addEventListener("wheel",e=>{e.preventDefault();scale=Math.min(4,Math.max(1,scale+(e.deltaY<0?.2:-.2)));zoomImage.style.transform=`scale(${scale})`},{passive:false});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeLightbox()});
 </script>
 </body>
 </html>
