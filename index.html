@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#09070b">
+<title>Argo 3 — Puja Countdown</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{min-height:100vh;overflow-x:hidden;background:#09070b;color:#eee1d1;font-family:'Noto Serif Bengali',serif}
+.page{min-height:100vh;display:grid;place-items:center;padding:24px;background:radial-gradient(ellipse at 50% 0%,#351d2a 0%,#100c11 48%,#08070a 100%);position:relative}
+.page:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 15% 80%,rgba(182,133,92,.08),transparent 30%),radial-gradient(circle at 90% 20%,rgba(171,93,112,.07),transparent 32%)}
+.card{width:100%;max-width:440px;position:relative;text-align:center;padding:42px 24px;border:1px solid rgba(210,171,119,.2);border-radius:32px;background:rgba(255,255,255,.025);backdrop-filter:blur(14px);box-shadow:0 20px 80px #0006;overflow:hidden}
+.brand{font-family:'Cormorant Garamond',serif;letter-spacing:5px;text-transform:uppercase;font-size:12px;color:#c6a477}
+h1{margin-top:26px;font-size:27px;font-weight:500;line-height:2;color:#f0dfc6}
+.message{color:#a99a90;font-size:14px;line-height:2.25;margin-top:18px}
+.heart{display:block;margin:25px 0;color:#b87879;font-size:20px;opacity:.8}
+button{margin-top:22px;padding:13px 28px;border:1px solid #886b4d;border-radius:50px;color:#e5c89f;background:rgba(150,100,60,.08);font-family:'Noto Serif Bengali',serif;font-size:14px;cursor:pointer;transition:.3s}
+button:hover{background:rgba(190,142,91,.17);box-shadow:0 0 25px rgba(190,142,91,.12)}
+.hidden{display:none!important}.countdown{animation:fadeIn 1s ease}.count-title{margin-top:26px;font-size:18px;color:#c9aa80}
+.days{font-family:'Cormorant Garamond',serif;font-size:clamp(82px,22vw,108px);font-weight:400;line-height:1.2;margin-top:20px;color:#e8cfaa;text-shadow:0 0 35px rgba(212,165,108,.12)}
+.days-label{font-size:17px;color:#b9a18a}.timer{display:flex;justify-content:center;gap:14px;margin-top:28px}.time-box{min-width:64px}.time-box strong{display:block;font-family:'Cormorant Garamond',serif;font-size:27px;font-weight:500;color:#e5d3bc}.time-box span{font-size:11px;color:#93877e}
+.footer{margin-top:34px;font-family:'Cormorant Garamond',serif;font-size:11px;letter-spacing:2px;color:#75665d}
+.flower{position:absolute;top:-30px;opacity:.0;animation:fall 10s linear infinite;font-size:18px;color:#d4bba0;pointer-events:none}.flower:nth-child(1){left:15%;animation-delay:0s}.flower:nth-child(2){left:48%;animation-delay:3s}.flower:nth-child(3){left:80%;animation-delay:6s}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fall{0%{transform:translateY(-10px) rotate(0deg);opacity:0}12%{opacity:.32}85%{opacity:.2}100%{transform:translateY(110vh) rotate(180deg);opacity:0}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="card">
+    <span class="flower">✿</span><span class="flower">❀</span><span class="flower">✿</span>
+    <div class="brand">ARGO 3 · DURGA PUJA</div>
+    <div class="home" id="home">
+      <h1>মা আসবেন আবার...<br>শুধু অপেক্ষাটুকু বাকি।</h1>
+      <p class="message">বছর ঘুরে আসে শরৎ,<br>কাশফুল দোলে বাতাসে,<br>ঢাকের শব্দ ভেসে আসে দূর থেকে।<br><br>কিছু অনুভূতি কখনো পুরোনো হয় না,<br>কিছু অপেক্ষা কখনো শেষ হয় না।</p>
+      <span class="heart">♡</span>
+      <button onclick="showCountdown()">কত দিন বাকি?</button>
+    </div>
+    <div class="countdown hidden" id="countdown">
+      <div class="count-title">শারদীয়া ২০২৭</div>
+      <div class="days" id="days">000</div>
+      <div class="days-label">দিন বাকি</div>
+      <div class="timer">
+        <div class="time-box"><strong id="hours">00</strong><span>ঘণ্টা</span></div>
+        <div class="time-box"><strong id="minutes">00</strong><span>মিনিট</span></div>
+        <div class="time-box"><strong id="seconds">00</strong><span>সেকেন্ড</span></div>
+      </div>
+      <p class="message">মা আসবেন...<br>আবার আলোকিত হবে চারপাশ।<br>অপেক্ষায় রইলাম।</p>
+      <button onclick="goBack()">← ফিরে যাও</button>
+    </div>
+    <div class="footer">MADE WITH LOVE · ARGO 3</div>
+  </div>
+</div>
+<script>
+// Countdown target: Maha Shashthi, 5 October 2027 (verify with local panjika)
+const targetDate = new Date('2027-10-05T00:00:00+06:00').getTime();
+function showCountdown(){document.getElementById('home').classList.add('hidden');document.getElementById('countdown').classList.remove('hidden');updateTimer();}
+function goBack(){document.getElementById('countdown').classList.add('hidden');document.getElementById('home').classList.remove('hidden');}
+function updateTimer(){const distance=targetDate-Date.now();if(distance<=0){['days','hours','minutes','seconds'].forEach(id=>document.getElementById(id).innerText=id==='days'?'0':'00');return;}
+const d=Math.floor(distance/86400000),h=Math.floor(distance/3600000%24),m=Math.floor(distance/60000%60),s=Math.floor(distance/1000%60);
+document.getElementById('days').innerText=d;document.getElementById('hours').innerText=String(h).padStart(2,'0');document.getElementById('minutes').innerText=String(m).padStart(2,'0');document.getElementById('seconds').innerText=String(s).padStart(2,'0');}
+updateTimer();setInterval(updateTimer,1000);
+</script>
+</body>
+</html>
